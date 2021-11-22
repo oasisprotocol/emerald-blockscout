@@ -1,0 +1,132 @@
+// general
+$oasis-blue-primary: #0092f6;
+$oasis-blue-dark: #161c3d;
+$oasis-white: #ffffff;
+$oasis-indigo: #310081;
+$oasis-minty: #4cd4a9;
+$oasis-yellow: #f4ce4b;
+$oasis-red: #ff4212;
+$oasis-gray-dark: #5a5a5a;
+$oasis-gray-light: #ececec;
+
+$primary: $oasis-blue-primary;
+$secondary: $oasis-minty;
+$tertiary: $oasis-blue-dark;
+$additional-font: $oasis-white;
+
+// footer
+$footer-background-color: $oasis-blue-dark;
+$footer-title-color: $oasis-white;
+$footer-text-color: $oasis-blue-primary;
+$footer-item-disc-color: $oasis-white;
+.footer-logo { filter: brightness(0) invert(1); }
+
+// dashboard
+$dashboard-line-color-price: $oasis-blue-primary; // price left border
+
+$dashboard-banner-chart-legend-label-color: $oasis-white;
+$dashboard-stats-item-label-color: $dashboard-banner-chart-legend-label-color;
+$dashboard-banner-chart-legend-value-color: $oasis-white; // chart labels
+$dashboard-stats-item-value-color: $oasis-white; // stat values
+
+$dashboard-stats-item-border-color: $oasis-white; // stat border
+
+$dashboard-banner-gradient-start: $oasis-blue-dark; // gradient begin
+
+$dashboard-banner-gradient-end: lighten($oasis-blue-dark, 5); // gradient end
+
+$dashboard-banner-network-plain-container-background-color: $oasis-blue-primary; // stats bg
+
+
+// navigation
+.navbar {
+    // header shadow
+    box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12);
+    background-color: $oasis-blue-dark !important;
+
+    .form-control,
+    .form-control input {
+        background: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .navbar-nav .nav-link {
+        color: $oasis-white !important;
+    }
+
+    &.navbar-primary .input-group .input-group-text.border {
+        border-color: $oasis-blue-primary !important;
+        color: $oasis-blue-primary !important;
+        background-color: $oasis-blue-dark;
+    }
+
+    .search-control.focused-field {
+        border-color: transparent !important;
+    }
+}
+.navbar-container,
+.navbar-primary {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+$dropdown-menu-item-hover-color: $oasis-blue-dark;
+$dropdown-menu-item-hover-background: rgba($oasis-gray-light, .1);
+$header-icon-color-hover: $oasis-blue-primary;
+$header-icon-border-color-hover: $oasis-blue-primary;
+
+// buttons
+.btn-line {
+    transition: background-color 1000ms cubic-bezier(.075, .82, .165, 1);
+    border-radius: 20px !important;
+    line-height: 24px;
+    font-weight: 400;
+}
+$btn-line-bg: $oasis-white; // button bg
+$btn-line-color: $oasis-blue-primary; // button border and font color && hover bg color
+$btn-copy-color: $oasis-blue-primary; // btn copy
+$btn-qr-color: $oasis-blue-primary; // btn qr-code
+$btn-address-card-icon-color: $oasis-blue-primary; // btn address color
+
+//links & tile
+$tile-body-a-color: $oasis-blue-primary;
+$tile-type-block-color: $oasis-blue-primary;
+$tile-type-progress-bar-color: $oasis-blue-primary;
+a.tile-title {
+    color: $oasis-blue-primary !important;
+}
+
+// card
+$card-background-1: $oasis-blue-primary;
+$card-tab-active: $oasis-blue-primary;
+
+.layout-container {
+    main {
+        background-color: $oasis-gray-light !important;
+    }
+
+	.dashboard-banner-container {
+	  background-image: linear-gradient(
+	    to bottom,
+	    $dashboard-banner-gradient-start,
+	    $dashboard-banner-gradient-end
+	  );
+	}
+}
+
+// Badges
+$badge-neutral-color: $oasis-blue-primary;
+$badge-neutral-background-color: rgba($oasis-blue-primary, .1);
+$api-text-monospace-color: $oasis-blue-primary;
+
+// Tokens dropdown
+.token-balance-dropdown[aria-labelledby="dropdown-tokens"] {
+  .dropdown-items .dropdown-item:hover {
+    color: $oasis-blue-primary !important;
+  }
+}
+
+// Dark theme
+$dark-primary: $oasis-blue-dark;
+$dark-secondary: $oasis-minty;
+$dark-primary-alternate: $oasis-blue-primary;
