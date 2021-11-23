@@ -114,7 +114,7 @@ const appJs =
             }
           ]
         }, {
-          test: /\.(svg|ttf|eot|woff|woff2)$/,
+          test: /\.(svg|ttf|eot|woff|woff2|otf)$/,
           use: {
             loader: 'file-loader',
             options: {
