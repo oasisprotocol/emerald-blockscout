@@ -22,27 +22,32 @@ $footer-item-disc-color: $oasis-white;
 .footer-logo { filter: brightness(0) invert(1); }
 
 // dashboard
-$dashboard-line-color-price: $oasis-blue-primary; // price left border
+$dashboard-line-color-price: $oasis-minty; // price left border
+$dashboard-line-color-market: $oasis-indigo; // market left border
+$dashboard-line-color-transactions: $oasis-yellow; // transaction left border
 
 $dashboard-banner-chart-legend-label-color: $oasis-white;
-$dashboard-stats-item-label-color: $dashboard-banner-chart-legend-label-color;
+$dashboard-stats-item-label-color: $oasis-blue-primary;
 $dashboard-banner-chart-legend-value-color: $oasis-white; // chart labels
 $dashboard-stats-item-value-color: $oasis-white; // stat values
 
-$dashboard-stats-item-border-color: $oasis-white; // stat border
+$dashboard-stats-item-border-color: $oasis-blue-primary; // stat border
 
-$dashboard-banner-gradient-start: $oasis-blue-dark; // gradient begin
+$dashboard-banner-gradient-start: $oasis-blue-primary; // gradient begin
 
-$dashboard-banner-gradient-end: lighten($oasis-blue-dark, 5); // gradient end
+$dashboard-banner-gradient-end: lighten($oasis-blue-primary, 5); // gradient end
 
-$dashboard-banner-network-plain-container-background-color: $oasis-blue-primary; // stats bg
+$dashboard-banner-network-plain-container-background-color: $oasis-blue-dark; // stats bg
 
 
 // navigation
 .navbar {
-    // header shadow
-    box-shadow: 0px 0px 30px 0px rgba(21, 53, 80, 0.12);
-    background-color: $oasis-blue-dark !important;
+    background-color: $oasis-blue-primary !important;
+
+    .navbar-container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
 
     .form-control,
     .form-control input {
@@ -50,30 +55,56 @@ $dashboard-banner-network-plain-container-background-color: $oasis-blue-primary;
         border-color: transparent !important;
     }
 
+    .navbar-logo {
+        filter: brightness(0) invert(1);
+    }
+
+    &.navbar-primary .navbar-nav .nav-link .nav-link-icon path {
+        fill: $oasis-white !important;
+    }
+
     .navbar-nav .nav-link {
         color: $oasis-white !important;
     }
 
     &.navbar-primary .input-group .input-group-text.border {
-        border-color: $oasis-blue-primary !important;
-        color: $oasis-blue-primary !important;
-        background-color: $oasis-blue-dark;
+        border-color: $oasis-white !important;
+        color: $oasis-white !important;
+        background-color: $oasis-blue-primary;
     }
 
     .search-control.focused-field {
         border-color: transparent !important;
     }
-}
-.navbar-container,
-.navbar-primary {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+
+    .main-search-autocomplete,
+    .main-search-autocomplete-mobile {
+        color: $oasis-white !important;
+
+        &::placeholder {
+            color: rgba($oasis-white, .5) !important;
+        }
+    }
+
+    .input-group-append * {
+        fill: $oasis-white !important;
+    }
+
+    .dark-mode-changer svg path {
+        fill: $oasis-white !important;
+    }
+
+    .nav-item .dropdown-menu {
+        top: 35px;
+        border-radius: 10px !important;
+        overflow: hidden;
+    }
 }
 
-$dropdown-menu-item-hover-color: $oasis-blue-dark;
-$dropdown-menu-item-hover-background: rgba($oasis-gray-light, .1);
-$header-icon-color-hover: $oasis-blue-primary;
-$header-icon-border-color-hover: $oasis-blue-primary;
+$dropdown-menu-item-hover-color: $oasis-blue-primary;
+$dropdown-menu-item-hover-background: rgba($oasis-blue-primary, .1);
+$header-icon-color-hover: $oasis-white;
+$header-icon-border-color-hover: $oasis-white;
 
 // buttons
 .btn-line {
