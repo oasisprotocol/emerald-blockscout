@@ -19,6 +19,12 @@ $secondary: $oasis-minty;
 $tertiary: $oasis-blue-dark;
 $additional-font: $oasis-white;
 
+$blue: $oasis-blue-primary;
+$indigo: $oasis-indigo;
+$red: $oasis-red;
+$green: $oasis-minty;
+$yellow: $oasis-yellow;
+
 // footer
 $footer-background-color: $oasis-blue-dark;
 $footer-title-color: $oasis-white;
@@ -28,20 +34,18 @@ $footer-item-disc-color: $oasis-white;
 
 // dashboard
 $dashboard-line-color-price: $oasis-blue-primary; // price left border
+$dashboard-line-color-market: $oasis-minty;
+$dashboard-line-color-transactions: $oasis-yellow;
 
 $dashboard-banner-chart-legend-label-color: $oasis-white;
-$dashboard-stats-item-label-color: $dashboard-banner-chart-legend-label-color;
 $dashboard-banner-chart-legend-value-color: $oasis-white; // chart labels
-$dashboard-stats-item-value-color: $oasis-white; // stat values
-
-$dashboard-stats-item-border-color: $oasis-white; // stat border
-
 $dashboard-banner-gradient-start: $oasis-blue-dark; // gradient begin
-
 $dashboard-banner-gradient-end: lighten($oasis-blue-dark, 5); // gradient end
 
+$dashboard-stats-item-label-color: $oasis-white;
+$dashboard-stats-item-value-color: $oasis-white; // stat values
+$dashboard-stats-item-border-color: $oasis-minty; // stat border
 $dashboard-banner-network-plain-container-background-color: $oasis-blue-primary; // stats bg
-
 
 // navigation
 .navbar {
@@ -68,6 +72,12 @@ $dashboard-banner-network-plain-container-background-color: $oasis-blue-primary;
     .search-control.focused-field {
         border-color: transparent !important;
     }
+
+    .nav-item .dropdown-menu {
+        top: 35px;
+        border-radius: 10px !important;
+        overflow: hidden;
+    }
 }
 .navbar-container,
 .navbar-primary {
@@ -76,27 +86,28 @@ $dashboard-banner-network-plain-container-background-color: $oasis-blue-primary;
 }
 
 $dropdown-menu-item-hover-color: $oasis-blue-dark;
-$dropdown-menu-item-hover-background: rgba($oasis-gray-light, .1);
+$dropdown-menu-item-hover-background: rgba($oasis-blue-primary, .1);
 $header-icon-color-hover: $oasis-blue-primary;
 $header-icon-border-color-hover: $oasis-blue-primary;
 
 // buttons
-.btn-line {
-    transition: background-color 1000ms cubic-bezier(.075, .82, .165, 1);
-    border-radius: 20px !important;
-    line-height: 24px;
-    font-weight: 400;
-}
 $btn-line-bg: $oasis-white; // button bg
 $btn-line-color: $oasis-blue-primary; // button border and font color && hover bg color
 $btn-copy-color: $oasis-blue-primary; // btn copy
 $btn-qr-color: $oasis-blue-primary; // btn qr-code
 $btn-address-card-icon-color: $oasis-blue-primary; // btn address color
+.btn-full,
+.btn-line {
+    transition: background-color 1000ms cubic-bezier(.075, .82, .165, 1);
+    border-radius: 18px !important;
+    line-height: 24px;
+}
 
 //links & tile
 $tile-body-a-color: $oasis-blue-primary;
 $tile-type-block-color: $oasis-blue-primary;
 $tile-type-progress-bar-color: $oasis-blue-primary;
+$tile-title-color: $oasis-blue-dark;
 a.tile-title {
     color: $oasis-blue-primary !important;
 }
@@ -104,13 +115,14 @@ a.tile-title {
 // card
 $card-background-1: $oasis-blue-primary;
 $card-tab-active: $oasis-blue-primary;
+.card-title {
+    font-weight: bold;
+}
+
+$body-bg: $oasis-gray-light;
 
 .layout-container {
-    main {
-        background-color: $oasis-gray-light !important;
-    }
-
-	.dashboard-banner-container {
+    .dashboard-banner-container {
 	  background-image: linear-gradient(
 	    to bottom,
 	    $dashboard-banner-gradient-start,
@@ -132,6 +144,7 @@ $api-text-monospace-color: $oasis-blue-primary;
 }
 
 // Dark theme
-$dark-primary: $oasis-blue-dark;
+$dark-primary: $oasis-blue-primary;
 $dark-secondary: $oasis-minty;
-$dark-primary-alternate: $oasis-blue-primary;
+$dark-primary-alternate: $oasis-blue-dark;
+$dark-primary-alternate-light: lighten($oasis-blue-dark, 5%);
