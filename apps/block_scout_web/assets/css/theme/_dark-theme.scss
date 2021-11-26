@@ -1,9 +1,22 @@
-$body-dark: #1c1d31; // body background
-$dark-bg: #22223a; // hero shade
-$dark-light-bg: #282945; // pills bg shade
-$dark-light: #313355; // tile light top share
-$labels-dark: #8a8dba; // header nav, labels
+// general
+$oasis-blue-primary: #0092f6;
+$oasis-blue-dark: #161c3d;
+$oasis-white: #ffffff;
+$oasis-indigo: #310081;
+$oasis-minty: #4cd4a9;
+$oasis-yellow: #f4ce4b;
+$oasis-red: #ff4212;
+$oasis-gray-dark: #5a5a5a;
+$oasis-gray-light: #ececec;
+
+$body-dark: $oasis-blue-dark; // body background
+$dark-bg: $oasis-blue-dark; // hero shade
+$dark-light-bg: lighten($oasis-blue-dark, 3); // pills bg shade
+$dark-light: lighten($oasis-blue-dark, 5); // tile light top share
+$labels-dark: $oasis-gray-light; // header nav, labels
 $dark-stakes-banned-background: #3e314c;
+
+$dark-border: rgba($oasis-white, 0.1);
 
 // Switcher
 .dark-mode-changer {
@@ -148,7 +161,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.card-header {
-		border-bottom-color: darken($labels-dark, 30);
+		border-bottom-color: $dark-border;
 	}
 
 	.address-detail-hash-title {
@@ -156,7 +169,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.card-tabs {
-		border-bottom-color: darken($labels-dark, 30);
+		border-bottom-color: $dark-border;
 	}
 
 	.card-tab {
@@ -357,10 +370,10 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.table th, .table td {
-		border-top-color: darken($labels-dark, 30);
+		border-top-color: $dark-border;
 	}
 	hr {
-		border-top-color: darken($labels-dark, 30);
+		border-top-color: $dark-border;
 	}
 
 	.i-tooltip {
@@ -422,18 +435,18 @@ $dark-stakes-banned-background: #3e314c;
 	.tooltip-pale-color.bs-tooltip-auto[x-placement^="top"] .arrow::before {
 		border-top-color: rgba(#fff, 0.5) !important;
 	}
-		
+
 	.tooltip-pale-color.bs-tooltip-right .arrow::before,
 	.tooltip-pale-color.bs-tooltip-auto[x-placement^="right"] .arrow::before {
 		border-right-color: rgba(#fff, 0.5) !important;
 	}
-		
+
 	.tooltip-pale-color.bs-tooltip-bottom .arrow::before,
 	.tooltip-pale-color.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
 		border-bottom-color: rgba(#fff, 0.5) !important;
 	}
-		
-		
+
+
 	.tooltip-pale-color.bs-tooltip-left .arrow::before,
 	.tooltip-pale-color.bs-tooltip-auto[x-placement^="left"] .arrow::before {
 		border-left-color: rgba(#fff, 0.5) !important;
@@ -1068,18 +1081,18 @@ $dark-stakes-banned-background: #3e314c;
 	.tooltip-inversed-color.bs-tooltip-auto[x-placement^="top"] .arrow::before {
 		border-top-color: $btn-line-color !important;
 	}
-		
+
 	.tooltip-inversed-color.bs-tooltip-right .arrow::before,
 	.tooltip-inversed-color.bs-tooltip-auto[x-placement^="right"] .arrow::before {
 		border-right-color: $btn-line-color !important;
 	}
-		
+
 	.tooltip-inversed-color.bs-tooltip-bottom .arrow::before,
 	.tooltip-inversed-color.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
 		border-bottom-color: $btn-line-color !important;
 	}
-		
-		
+
+
 	.tooltip-inversed-color.bs-tooltip-left .arrow::before,
 	.tooltip-inversed-color.bs-tooltip-auto[x-placement^="left"] .arrow::before {
 		border-left-color: $btn-line-color !important;
