@@ -6,6 +6,7 @@ $font-family-monospace: $font-family;
 // general
 $oasis-blue-primary: #0092f6;
 $oasis-blue-dark: #161c3d;
+$oasis-blue-dark-text: #243f5f;
 $oasis-white: #ffffff;
 $oasis-indigo: #310081;
 $oasis-minty: #4cd4a9;
@@ -80,6 +81,11 @@ $dashboard-banner-network-plain-container-background-color: $oasis-blue-primary;
         border-color: transparent !important;
     }
 
+    .main-search-autocomplete,
+    .main-search-autocomplete-mobile {
+        color: $oasis-white !important;
+    }
+
     .nav-item .dropdown-menu {
         top: 35px;
         border-radius: 10px !important;
@@ -123,7 +129,8 @@ a.tile-title {
 $card-background-1: $oasis-blue-primary;
 $card-tab-active: $oasis-blue-primary;
 .card-title {
-    font-weight: bold;
+    font-weight: bold !important;
+    color: #243f5f;
 }
 
 $body-bg: $oasis-gray-light;
