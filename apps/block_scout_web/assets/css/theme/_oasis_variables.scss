@@ -30,7 +30,10 @@ $footer-background-color: $oasis-blue-dark;
 $footer-title-color: $oasis-white;
 $footer-text-color: $oasis-blue-primary;
 $footer-item-disc-color: $oasis-white;
-.footer-logo { filter: brightness(0) invert(1); }
+.footer-logo {
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
 
 // dashboard
 $dashboard-line-color-price: $oasis-blue-primary; // price left border
@@ -61,6 +64,10 @@ $dashboard-banner-network-plain-container-background-color: $oasis-blue-primary;
 
     .navbar-nav .nav-link {
         color: $oasis-white !important;
+    }
+
+    .navbar-logo {
+        height: 20px;
     }
 
     &.navbar-primary .input-group .input-group-text.border {
