@@ -157,6 +157,11 @@ $api-text-monospace-color: $oasis-blue-primary;
   }
 }
 
+.dark-mode-changer {
+    // Disable/hide light/dark mode switcher
+    display: none !important;
+}
+
 // Dark theme
 $dark-primary: $oasis-blue-primary;
 $dark-secondary: $oasis-minty;
