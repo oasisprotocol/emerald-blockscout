@@ -77,6 +77,13 @@ defmodule Explorer.Chain.Import.Runner.Address.CoinBalances do
       |> Enum.sort_by(&{&1.address_hash, &1.block_number})
       |> Enum.dedup()
 
+    ordered_changes_list =
+      if Application.get_env(:explorer, :json_rpc_named_arguments)[:variant] == EthereumJSONRPC.Oasis do
+        ordered_changes_list |> Enum.uniq()
+      else
+        ordered_changes_list
+      end
+
     {:ok, _} =
       Import.insert_changes_list(
         repo,
