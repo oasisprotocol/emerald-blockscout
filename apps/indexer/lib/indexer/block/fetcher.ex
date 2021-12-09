@@ -252,8 +252,14 @@ defmodule Indexer.Block.Fetcher do
         address_hash_to_fetched_balance_block_number: address_hash_to_block_number
       }) do
     addresses
-    |> Enum.map(fn %Address{hash: address_hash} ->
-      block_number = Map.fetch!(address_hash_to_block_number, to_string(address_hash))
+    |> Enum.map(fn address = %Address{hash: address_hash} ->
+      block_number =
+        if Map.has_key?(address_hash_to_block_number, to_string(address)) do
+          Map.fetch!(address_hash_to_block_number, to_string(address))
+        else
+          Map.fetch!(address_hash_to_block_number, to_string(address_hash))
+        end
+
       %{address_hash: address_hash, block_number: block_number}
     end)
     |> CoinBalance.async_fetch_balances()
