@@ -83,6 +83,13 @@ defmodule Explorer.Chain.Import.Runner.Addresses do
     # Enforce Address ShareLocks order (see docs: sharelocks.md)
     ordered_changes_list = sort_changes_list(changes_list)
 
+    ordered_changes_list =
+      if Application.get_env(:explorer, :json_rpc_named_arguments)[:variant] == EthereumJSONRPC.Oasis do
+        ordered_changes_list |> Enum.uniq()
+      else
+        ordered_changes_list
+      end
+
     Import.insert_changes_list(
       repo,
       ordered_changes_list,
