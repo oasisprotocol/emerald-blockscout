@@ -14,6 +14,36 @@ Visit the [POA BlockScout forum](https://forum.poa.network/c/blockscout) for FAQ
 
 You can also access the dev chatroom on our [Gitter Channel](https://gitter.im/poanetwork/blockscout).
 
+## Oasis Emerald style
+
+Use the following variables for using with Oasis Emerald network:
+```
+NETWORK=Emerald
+SUBNETWORK=Emerald Testnet
+LOGO=/images/oasis_logo_blue.svg
+LOGO_FOOTER=/images/oasis_logo_white.svg
+ETHEREUM_JSONRPC_VARIANT=oasis
+LINK_TO_OTHER_EXPLORERS=false
+COIN=ROSE
+CHAIN_ID=42261
+
+ETHEREUM_JSONRPC_HTTP_URL=<oasis-web3-gateway-http-endpoint>
+ETHEREUM_JSONRPC_TRACE_URL=<oasis-web3-gateway-http-endpoint>
+ETHEREUM_JSONRPC_WS_URL=ws://<oasis-web3-gateway-ws-endpoint>
+
+DATABASE_URL=<postgres-database-url>
+
+DISABLE_EXCHANGE_RATES=true
+ENABLE_TXS_STATS=true
+SHOW_TXS_CHART=true
+HIDE_BLOCK_MINER=true
+SUPPORTED_CHAINS='[]'
+OTHER_EXPLORERS='{}'
+SHOW_PRICE_CHART=false
+
+MIX_ENV=prod
+```
+
 ## About BlockScout
 
 BlockScout is an Elixir application that allows users to search transactions, view accounts and balances, and verify smart contracts on the Ethereum network including all forks and sidechains.
@@ -22,7 +52,7 @@ Currently available full-featured block explorers (Etherscan, Etherchain, Blockc
 
 ## Supported Projects
 
-BlockScout supports a number of projects. Hosted instances include POA Network, xDai Chain, Ethereum Classic, Sokol & Kovan testnets, and other EVM chains. 
+BlockScout supports a number of projects. Hosted instances include POA Network, xDai Chain, Ethereum Classic, Sokol & Kovan testnets, and other EVM chains.
 
 - [List of hosted mainnets, testnets, and additional chains using BlockScout](https://docs.blockscout.com/for-projects/supported-projects)
 - [Hosted instance versions](https://docs.blockscout.com/about/use-cases/hosted-blockscout)
