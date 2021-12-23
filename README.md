@@ -27,6 +27,7 @@ LINK_TO_OTHER_EXPLORERS=false
 COIN=ROSE
 CHAIN_ID=42261
 HEALTHY_BLOCKS_PERIOD=4000000
+BLOCKSCOUT_HOST=<explorer.hostname.domain.com>
 
 ETHEREUM_JSONRPC_HTTP_URL=<oasis-web3-gateway-http-endpoint>
 ETHEREUM_JSONRPC_TRACE_URL=<oasis-web3-gateway-http-endpoint>
