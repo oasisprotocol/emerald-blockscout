@@ -350,7 +350,7 @@ defmodule Explorer.Chain.Import.Runner.Blocks do
          timeout: timeout,
          timestamps: timestamps
        }) do
-    if Application.get_env(:explorer, :json_rpc_named_arguments)[:variant] == EthereumJSONRPC.RSK do
+    if Application.get_env(:explorer, :json_rpc_named_arguments)[:variant] == EthereumJSONRPC.Oasis do
       {:ok, []}
     else
       sorted_pending_ops =
