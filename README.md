@@ -1,3 +1,14 @@
+# 🚨 Retired Project 🚨
+
+This project is no longer maintained or actively developed.
+
+Please, use our official [Oasis Explorer](https://explorer.oasis.io/) to explore
+the Oasis network ([GitHub repo](https://github.com/oasisprotocol/explorer)).
+It gets data from [Oasis Nexus](https://nexus.oasis.io/), the official indexer
+for the Oasis Network ([GitHub repo](https://github.com/oasisprotocol/nexus)).
+
+# Historical README
+
 <h1 align="center">BlockScout</h1>
 <p align="center">Blockchain Explorer for inspecting and analyzing EVM Chains.</p>
 <div align="center">
